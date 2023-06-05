@@ -28,7 +28,7 @@ app.get ('/bad', (req, res) => {
 app.use('*', notFoundHandler);
 app.use(errorHandler);
 app.listen (port, () => {
-    console.log('Server is running on port ${port}')
+    console.log(`Server is running on port ${port}`)
 });
 
 module.exports = {
